@@ -48,7 +48,7 @@ Please read the document [PACKAGE_ORGANIZATION.md](./PACKAGE_ORGANIZATION.md).
 
 ### Dataset for test
 
-Example experimental datasets for model training and prediction are available
+Example experimental datasets are available
 at [Dropbox](https://www.dropbox.com/scl/fo/4wa95ces3jwg5u8h8r8pe/AIraJ1CCuLcLE-Jyb2Aue7o?rlkey=dnpb69jzj4aox7k1up7kyki6g&st=2jaz9f2c&dl=0).
 
 | Dataset                   | Fluorescent dye        | Excitation | Polarization state                      | Expected orientation |
