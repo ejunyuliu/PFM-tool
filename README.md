@@ -5,7 +5,7 @@ PFM-tool is a 3D spatio-angular reconstruction pipeline for polarized fluorescen
 - Optimized spatio-angular imaging model
 - CPU-/GPU-based efficient generalized Richarson-Lucy algorithm (eGRL) to restore density and orientation distribution
   in each voxel
-- Visualization module for rendering density, orientation or ODF map.
+- Visualization module for rendering density, peak orientation or orientation distribution function (ODF) map.
 
 This is the companion code to our paper:
 
