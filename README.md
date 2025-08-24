@@ -82,7 +82,7 @@ Here we provide a brief guidance on running the code on the following experiment
 
 | Parameter    | Description                                                   | Example Values                        |
 |--------------|---------------------------------------------------------------|---------------------------------------|
-| `viz_type`   | Display modality: density, orientation or ODF                 | `['Density']`,`['Peak']` or `['ODF']` |
+| `viz_type`   | Display modality: density, peak orientation or ODF            | `['Density']`,`['Peak']` or `['ODF']` |
 | `mask`       | Apply density-related mask for filtering                      | `spang0.density() > 0.05`, ...        |
 | `skip_n`     | Voxel sampling rate for rendering                             | `1`, `2`, ...                         |
 | `peak_scale` | Scale the length of cylinders which indicate the orientations | `1`, `2`, ...                         |
@@ -104,7 +104,7 @@ Here we provide a brief guidance on running the code on the following experiment
 
 | Parameter    | Description                                                   | Example Values                        |
 |--------------|---------------------------------------------------------------|---------------------------------------|
-| `viz_type`   | Display modality: density, orientation or ODF                 | `['Density']`,`['Peak']` or `['ODF']` |
+| `viz_type`   | Display modality: density, peak orientation or ODF            | `['Density']`,`['Peak']` or `['ODF']` |
 | `mask`       | Apply density-related mask for filtering                      | `spang0.density() > 0.05`, ...        |
 | `skip_n`     | Voxel sampling rate for rendering                             | `1`, `2`, ...                         |
 | `peak_scale` | Scale the length of cylinders which indicate the orientations | `1`, `2`, ...                         |
