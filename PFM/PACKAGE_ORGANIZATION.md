@@ -47,12 +47,6 @@ PFM/
 - Provides visualization, and orientation analysis
 - Supports TIFF format data storage and reading
 
-**Key Methods**:
-
-- `density()`: Extract density data
-- `visualize()`: 3D visualization
-- `save_tiff()`/`read_tiff()`: Data storage
-
 ### 2. SPIM Module
 
 #### 2.1 Data Class (SPIM/data.py)
