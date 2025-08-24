@@ -32,7 +32,7 @@ eGRL pipeline for reconstructing GUV dataset based on GPU:
         conda env create -f environment-windows.yml
 
 - Activate the `PFM-tool` environment. You will need to activate this environment
-  every time you want to run polaris.
+  every time you want to run `PFM-tool`.
 
       conda activate PFM-tool
 
