@@ -1,5 +1,6 @@
 .idea
 __pycache__
-/examples/test_data/
+/examples/test_data/20200116_GUV_tiltLS
+/examples/test_data/20200322_XylemCell_FullCalibration
 /examples/test_data.zip
 PFM.egg-info

@@ -33,6 +33,14 @@ def get_gpu_memory():
 
 
 if __name__ == '__main__':
+    root_path = './test_data/20200322_XylemCell_FullCalibration/'  # Dataset root folder
+    cal_in_path = '20200322_FullCalibration/LS_561/'  # Relative path of calibration data
+    data_in_path = '20200322_XylemCell/Sample2_42V/Reg/'  # Relative path of sample raw data
+
+    # Region of interest (full volume by default)
+    roi = None
+
+    # Acuqisition parameters
     lamb = 561  # Laser wavelength in nm
     n_samp = 1.33  # Refractive index of the sample
     ill_fwhm = [2000, 2000]  # Illumination beam full width at half maximum (FWHM), in nm
@@ -57,16 +65,9 @@ if __name__ == '__main__':
     vox_dim = [130, 130, 130]  # Voxel dimensions, in nm
     data_format = 'diSPIM-2Vx3Tx7P'  # Data format indicating the file structure, i.e., 2 views × 3 tilts × 7 polarizations
 
-    root_path = './test_data/20200322_XylemCell_FullCalibration/'  # Dataset root folder
-    cal_in_path = '20200322_FullCalibration/LS_561/'  # Relative path of calibration data
-    data_in_path = '20200322_XylemCell/Sample2_42V/Reg/'  # Relative path of sample raw data
-
     # Output path for reconstructions and rendering
     recon_out_folder = basename(normpath(root_path)) + '/' + data_in_path
     viz_out_folder = recon_out_folder
-
-    # Region of interest (full volume by default)
-    roi = None
 
     block_size = [100, 100, 100]  # Block size for chunked processing
     res_size = [10, 10, 10]  # Redundant margin added around each block
@@ -100,5 +101,4 @@ if __name__ == '__main__':
 
     # Step 5: Visualize the peak orientation map
     spang0.visualize(out_path=viz_out_folder + 'rendering/', viz_type=['Peak'], mask=spang0.density() > 0.2,
-                     interact=True, titles=False, scalebar=False, video=False, n_frames=18, scale=3, skip_n=5,
-                     peak_scale=3)
+                     skip_n=5, peak_scale=3)

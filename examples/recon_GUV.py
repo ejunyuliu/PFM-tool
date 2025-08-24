@@ -33,6 +33,17 @@ def get_gpu_memory():
 
 
 if __name__ == '__main__':
+    root_path = './test_data/20200116_GUV_tiltLS/'  # Dataset root folder
+    cal_in_path = '20200116_Calibration/LS_488/'  # Relative path of calibration data
+    data_in_path = '20200116_GUV/Sample4/Reg/'  # Relative path of sample raw data
+
+    # Region of interest
+    # roi = None
+    # roi = [[120, 200], [700, 760], [50, 130]]  # isolated 5 um GUV  near edge of FOV
+    roi = [[123, 294], [86, 201], [87, 216]]  # pair of GUVs (14 um and 8 um) near center of FOV
+    # roi = [[339, 466], [626, 734], [174, 272]]  # deformed/flattened GUV near corner of FOV
+
+    # Acuqisition parameters
     lamb = 488  # Laser wavelength in nm
     n_samp = 1.33  # Refractive index of the sample
     ill_fwhm = [2000, 2000]  # Illumination beam full width at half maximum (FWHM), in nm
@@ -57,20 +68,11 @@ if __name__ == '__main__':
     vox_dim = [130, 130, 130]  # Voxel dimensions, in nm
     data_format = 'diSPIM-2Vx3Tx7P'  # Data format indicating the file structure, i.e., 2 views × 3 tilts × 7 polarizations
 
-    root_path = './test_data/20200116_GUV_tiltLS/'  # Dataset root folder
-    cal_in_path = '20200116_Calibration/LS_488/'  # Relative path of calibration data
-    data_in_path = '20200116_GUV/Sample4/Reg/'  # Relative path of sample raw data
-
     # Output path for reconstructions and rendering
     recon_out_folder = basename(normpath(root_path)) + '/' + data_in_path
     viz_out_folder = recon_out_folder
 
-    # Region of interest (full volume by default)
-    # roi = None
-    # roi = [[120, 200], [700, 760], [50, 130]]  # isolated 5 um GUV  near edge of FOV
-    roi = [[123, 294], [86, 201], [87, 216]]  # pair of GUVs (14 um and 8 um) near center of FOV
-    # roi = [[339, 466], [626, 734], [174, 272]]  # deformed/flattened GUV near corner of FOV
-
+    # Recon parameters
     block_size = [100, 100, 100]  # Block size for chunked processing
     res_size = [10, 10, 10]  # Redundant margin added around each block
 
@@ -103,5 +105,4 @@ if __name__ == '__main__':
 
     # Step 5: Visualize the peak orientation map
     spang0.visualize(out_path=viz_out_folder + 'rendering/', viz_type=['Peak'], mask=spang0.density() > 0.02,
-                     interact=True, titles=False, scalebar=False, video=False, n_frames=18, scale=3, skip_n=5,
-                     peak_scale=3)
+                     skip_n=5, peak_scale=3)
