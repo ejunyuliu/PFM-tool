@@ -42,7 +42,7 @@ eGRL pipeline for reconstructing GUV dataset based on GPU:
 
 ### Package Organization
 
-Please read the document [PACKAGE_ORGANIZATION.md](./PACKAGE_ORGANIZATION.md).
+Please read the document [PACKAGE_ORGANIZATION.md](PFM/PACKAGE_ORGANIZATION.md).
 
 ## Overall Workflow
 
