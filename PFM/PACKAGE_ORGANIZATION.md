@@ -14,26 +14,24 @@ PFM/
 ├── util.py                  # Utility functions
 ├── visualization.py         # 3D visualization module
 ├── viz.py                   # Visualization control functions
-├── SPIM/                    # Selective Plane Illumination Microscopy module
-│   ├── data.py             # Data class: Multi-view polarized microscopy data structure
-│   ├── microscope/         # Complete microscope model
-│   │   ├── micro.py        # Microscope class: Main microscope control
-│   │   ├── ill.py          # Illuminator class: Illumination system model
-│   │   ├── det.py          # Detector class: Detection system model
-│   │   └── multi.py        # Multi-view microscope system
-│   ├── microscope_simplified/ # Simplified microscope model
-│   │   ├── micro.py        # Simplified microscope control
-│   │   ├── ill.py          # Simplified illumination model
-│   │   ├── det.py          # Simplified detection model  
-│   │   └── multi.py        # Simplified multi-view system
-│   ├── preprocess/         # Data preprocessing
-│   │   └── readin_block.py # Data reading and block processing
-│   └── reconstruct/        # Image reconstruction algorithms
-│       ├── recon_eGRL_CPU.py  # CPU version of eGRL reconstruction
-│       ├── recon_eGRL_GPU.py  # GPU version of eGRL reconstruction
-│       └── recon_eGRL_GPU_most.py # compremised GPU version
-└── evaluation/             # Evaluation and testing module
-    └── eval.py            # Evaluation metrics (FWHM, etc.)
+└── SPIM/                    # Selective Plane Illumination Microscopy module
+    ├── data.py             # Data class: Multi-view polarized microscopy data structure
+    ├── microscope/         # Complete microscope model
+    │   ├── micro.py        # Microscope class: Main microscope control
+    │   ├── ill.py          # Illuminator class: Illumination system model
+    │   ├── det.py          # Detector class: Detection system model
+    │   └── multi.py        # Multi-view microscope system
+    ├── microscope_simplified/ # Simplified microscope model
+    │   ├── micro.py        # Simplified microscope control
+    │   ├── ill.py          # Simplified illumination model
+    │   ├── det.py          # Simplified detection model  
+    │   └── multi.py        # Simplified multi-view system
+    ├── preprocess/         # Data preprocessing
+    │   └── readin_block.py # Data reading and block processing
+    └── reconstruct/        # Image reconstruction algorithms
+        ├── recon_eGRL_CPU.py  # CPU version of eGRL reconstruction
+        ├── recon_eGRL_GPU.py  # GPU version of eGRL reconstruction
+        └── recon_eGRL_GPU_most.py # compremised GPU version
 
 ```
 
