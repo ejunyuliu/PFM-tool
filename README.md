@@ -58,7 +58,7 @@ at [Dropbox](https://www.dropbox.com/scl/fo/4wa95ces3jwg5u8h8r8pe/AIraJ1CCuLcLE-
 
 Notes:
 
-- Acquired via pol-diSPIM with a pair of 1.1 and 0.67 NA objectives.
+- Acquired via [pol-diSPIM](https://www.pnas.org/doi/10.1073/pnas.2406679122) with a pair of 1.1 and 0.67 NA objectives.
 - Voxel size (preprocessed): 0.13×0.13×0.13 μm.
 
 ### Practice on test data
