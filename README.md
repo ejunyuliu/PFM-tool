@@ -49,7 +49,7 @@ Please read the document [PACKAGE_ORGANIZATION.md](PFM/PACKAGE_ORGANIZATION.md).
 ### Dataset for test
 
 Example experimental datasets are available
-at [Dropbox](https://www.dropbox.com/scl/fo/4wa95ces3jwg5u8h8r8pe/AIraJ1CCuLcLE-Jyb2Aue7o?rlkey=dnpb69jzj4aox7k1up7kyki6g&st=2jaz9f2c&dl=0).
+at [Dropbox](https://www.dropbox.com/scl/fo/4wa95ces3jwg5u8h8r8pe/AIraJ1CCuLcLE-Jyb2Aue7o?rlkey=dnpb69jzj4aox7k1up7kyki6g&st=2jaz9f2c&dl=0) or [Zenodo](https://zenodo.org/records/17033756).
 
 | Dataset                   | Fluorescent dye        | Excitation | Polarization state                      | Expected orientation |
 |---------------------------|------------------------|------------|-----------------------------------------|----------------------|
@@ -68,7 +68,7 @@ Here we provide a brief guidance on running the code on the following experiment
 - **Test on Giant Unilamellar Vesicle (GUV) data**
 
     1) Download the GUV data `20200116_GUV_tiltLS`
-       from [Dropbox](https://www.dropbox.com/scl/fo/4wa95ces3jwg5u8h8r8pe/AIraJ1CCuLcLE-Jyb2Aue7o?rlkey=dnpb69jzj4aox7k1up7kyki6g&st=2jaz9f2c&dl=0),
+       from [Dropbox](https://www.dropbox.com/scl/fo/4wa95ces3jwg5u8h8r8pe/AIraJ1CCuLcLE-Jyb2Aue7o?rlkey=dnpb69jzj4aox7k1up7kyki6g&st=2jaz9f2c&dl=0) or [Zenodo](https://zenodo.org/records/17033756),
        and then place the downloaded folder `20200116_GUV_tiltLS` into directory `./examples/test_data/`.
 
     2) Open the code `recon_GUV.py`. Users can use the default data paths, or set their own as needed at Line 36. Then
@@ -90,7 +90,7 @@ Here we provide a brief guidance on running the code on the following experiment
 - **Test on Tobacco xylem cell data**
 
     1) Download the GUV data `20200322_XylemCell_FullCalibration`
-       from [Dropbox](https://www.dropbox.com/scl/fo/4wa95ces3jwg5u8h8r8pe/AIraJ1CCuLcLE-Jyb2Aue7o?rlkey=dnpb69jzj4aox7k1up7kyki6g&st=2jaz9f2c&dl=0),
+       from [Dropbox](https://www.dropbox.com/scl/fo/4wa95ces3jwg5u8h8r8pe/AIraJ1CCuLcLE-Jyb2Aue7o?rlkey=dnpb69jzj4aox7k1up7kyki6g&st=2jaz9f2c&dl=0) or [Zenodo](https://zenodo.org/records/17033756),
        and then place the downloaded folder `20200322_XylemCell_FullCalibration` into directory `./examples/test_data/`.
 
     2) Open the code `recon_Xylem.py`. Users can use the default data paths, or set their own as needed at Line 36.
