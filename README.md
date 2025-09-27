@@ -9,7 +9,7 @@ PFM-tool is a 3D spatio-angular reconstruction pipeline for polarized fluorescen
 
 This is the companion code to our paper:
 
-[Observing biological spatio-angular structures and dynamics with statistical image reconstruction and polarized fluorescence microscopy]().
+[Observing biological spatio-angular structures and dynamics with statistical image reconstruction and polarized fluorescence microscopy](https://www.biorxiv.org/content/10.1101/2025.09.23.678164v1).
 
 ![Example](figures/example.png)
 
