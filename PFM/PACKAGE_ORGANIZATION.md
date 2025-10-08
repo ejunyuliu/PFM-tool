@@ -11,6 +11,7 @@ polarized microscopy.
 ```
 PFM/
 ├── spang.py                 # Spang class: Core data structure for spatio-angular density
+├── phantom.py               # Phantom generator
 ├── util.py                  # Utility functions
 ├── visualization.py         # 3D visualization module
 ├── viz.py                   # Visualization control functions
