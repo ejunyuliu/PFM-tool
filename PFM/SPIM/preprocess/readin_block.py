@@ -1,6 +1,5 @@
-from PFM import spang,  util
+from PFM import spang, util
 from PFM.SPIM import data
-from PFM.SPIM.microscope_simplified import multi as multi_sim
 from PFM.SPIM.microscope import multi as multi_com
 import numpy as np
 import math
@@ -45,10 +44,8 @@ def read_correct(lamb, n_samp, ill_fwhm, det_nas,
     g = np.zeros(tuple(block_size) + data0.g.shape[3:])
     data1 = data.Data(g=g, vox_dim=vox_dim, ill_fwhm=ill_fwhm, det_nas=det_nas, ill_pols=ill_pols, det_pols=None)
     spang1 = spang.Spang(f=np.zeros(data1.g.shape[0:3] + (15,)), vox_dim=vox_dim, lamb=lamb, n_samp=n_samp)
-    if PSF == 'simplified':
-        dispim1 = multi_sim.MultiMicroscope(spang1, data1)
-    if PSF == 'complete':
-        dispim1 = multi_com.MultiMicroscope(spang1, data1)
+
+    dispim1 = multi_com.MultiMicroscope(spang1, data1)
 
     dispim1.calc_H()
 
@@ -60,7 +57,6 @@ def read_correct(lamb, n_samp, ill_fwhm, det_nas,
     data0.g = data0.g * cal_averages[0, 0] * model_averages / cal_averages.T
 
     return dispim1, spang0, data0
-
 
 
 def reconstruct(dispim1, spang0, data0, block_size, res_size, Iter, iter_num):
