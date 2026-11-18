@@ -7,9 +7,9 @@ PFM-tool is a 3D spatio-angular reconstruction pipeline for polarized fluorescen
   in each voxel
 - Visualization module for rendering density, peak orientation or orientation distribution function (ODF) map.
 
-This is the companion code to our paper:
+This is the companion code to our paper published on _Nature Communications_:
 
-[Observing biological spatio-angular structures and dynamics with statistical image reconstruction and polarized fluorescence microscopy](https://www.biorxiv.org/content/10.1101/2025.09.23.678164v1).
+[Efficient spatio-angular reconstruction enables high-fidelity mapping of six-dimensional structures and dynamics with polarized fluorescence microscopy](https://www.nature.com/articles/s41467-026-76703-0).
 
 ![Example](figures/example.png)
 
