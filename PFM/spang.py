@@ -51,6 +51,8 @@ class Spang:
             return self.f[..., 0]
 
     def save_tiff(self, filename='sh.tif', data=None):
+        util.mkdir(filename)
+
         if data is None:
             data = self.f
 
